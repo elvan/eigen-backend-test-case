@@ -31,7 +31,7 @@ export class Borrowing {
   @CreateDateColumn()
   borrowDate: Date;
 
-  @Column({ nullable: true })
+  @Column({ type: 'date', nullable: true })
   returnDate: Date | null;
 
   // Domain methods
