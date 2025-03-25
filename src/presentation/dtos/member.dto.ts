@@ -27,3 +27,8 @@ export class CreateMemberDto {
   @ApiProperty({ description: 'Member name', example: 'Angga' })
   name: string;
 }
+
+export class UpdateMemberDto {
+  @ApiProperty({ description: 'Member name', example: 'Angga Updated', required: false })
+  name?: string;
+}

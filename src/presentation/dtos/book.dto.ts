@@ -30,3 +30,14 @@ export class CreateBookDto {
   @ApiProperty({ description: 'Total stock', example: 1 })
   stock: number;
 }
+
+export class UpdateBookDto {
+  @ApiProperty({ description: 'Book title', example: 'Harry Potter', required: false })
+  title?: string;
+
+  @ApiProperty({ description: 'Book author', example: 'J.K Rowling', required: false })
+  author?: string;
+
+  @ApiProperty({ description: 'Total stock', example: 1, required: false })
+  stock?: number;
+}
